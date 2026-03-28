@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium To-Do | Organisasi Lebih Baik</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="description" content="A simple, elegant, and premium to-do list manager for better productivity.">
+</head>
+<body>
+
+  <div class="todo-container">
+    <header>
+      <h1>My To-Do</h1>
+      <p class="subtitle">Focus on what's important today</p>
+    </header>
+
+    <div class="input-group">
+      <input type="text" id="todoInput" placeholder="Apa yang ingin kamu kerjakan?" autocomplete="off">
+      <button class="add-btn" id="addBtn">
+        <i class="fa-solid fa-plus"></i>
+      </button>
+    </div>
+
+    <div id="empty-state" class="empty-state">
+      <i class="fa-solid fa-clipboard-list"></i>
+      <p>Belum ada tugas hari ini. Mulai tambahkan!</p>
+    </div>
+
+    <ul id="todoList">
+      <!-- To-Do items will be injected here via JavaScript -->
+    </ul>
+
+    <div class="stats">
+      <span id="taskCount">0 Terisa</span>
+      <button class="clear-btn" id="clearAll">Hapus Semua</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
